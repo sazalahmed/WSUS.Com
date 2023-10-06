@@ -12,12 +12,67 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/spacing.css">
   <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/venobox.min.css">
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
+
+  <!--================================
+    POPUP TOP START
+  =================================-->
+  <section class="wsus__popup_top">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-lg-3">
+          <div class="wsus__popup_counter">
+            <div class="simply-countdown simply-countdown-one"></div>
+          </div>
+        </div>
+        <div class="col-xl-9 col-lg-9">
+          <div class="wsus__popup_top_text">
+            <h4>special offer</h4>
+            <p>up to <span>40%</span> on any membership purchase</p>
+            <a href="#">grab the deal</a>
+            <span class="delete"><i class="far fa-times"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--================================
+    POPUP TOP END
+  =================================-->
+
+
+  <!--==========================
+    POPUP SUBSCRIBE START
+  ===========================-->
+  <!-- <section class="wsus__popup_subscribe">
+    <div class="popup_subscribe_center" style="background: url(images/popup_bg.jpg);">
+      <div class="popup_subscribe_text">
+        <img src="images/logo.png" alt="logo" class="img-fluid">
+        <h5>be the first to know</h5>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum unde quis hic quaerat labore adipisci itaque.</p>
+        <form>
+          <input class="news_input" type="email" placeholder="Email">
+          <button type="submit">subscribe</button>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Don't show this popup again
+            </label>
+          </div>
+        </form>
+        <span class="subscribe_close"><i class="far fa-times"></i></span>
+    </div>
+  </section> -->
+  <!--==========================
+    POPUP SUBSCRIBE END
+  ===========================-->
 
 
   <!--================================
@@ -26,7 +81,7 @@
   <section class="wsus__topbar">
     <div class="container">
       <div class="row">
-        <div class="col-xl-6">
+        <div class="col-12 col-md-6 col-xl-6">
           <ul class="wsus__topbar_icon d-flex flex-wrap">
             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
@@ -34,7 +89,7 @@
             <li><a href="#"><i class="fab fa-youtube"></i></a></li>
           </ul>
         </div>
-        <div class="col-xl-6">
+        <div class="col-12 col-md-6 col-xl-6">
           <ul class="wsus__topbar_action d-flex flex-wrap justify-content-end">
             <li><a href="callto:+96587455888774"><i class="fal fa-phone-alt"></i> +96587455888774</a></li>
             <li><a href="mailto:example@gmail.com"><i class="fas fa-envelope"></i> example@gmail.com</a></li>
@@ -45,6 +100,78 @@
   </section>
   <!--================================
     TOPBAR END
+  =================================-->
+
+
+
+  
+  <!--================================
+    MINI CART START
+  =================================-->
+  <section class="wsus__mini_cart">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5>total item <span>03</span></h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body wsus__minicart_body">
+        <ul>
+          <li>
+            <a href="#" class="minicart_img">
+              <img src="images/gallery_3.jpg" alt="cart images" class="img-fluid">
+            </a>
+            <div class="minicart_text">
+              <a href="#">TopCommerce - Laravel Multi Vendor ECommerce Script Laravel Multi Vendor ECommerce Script</a>
+              <span><i class="far fa-minus"></i></span>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="minicart_img">
+              <img src="images/gallery_6.jpg" alt="cart images" class="img-fluid">
+            </a>
+            <div class="minicart_text">
+              <a href="#">FindEstate - Laravel Real Estate Listing CMS With</a>
+              <span><i class="far fa-minus"></i></span>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="minicart_img">
+              <img src="images/gallery_3.jpg" alt="cart images" class="img-fluid">
+            </a>
+            <div class="minicart_text">
+              <a href="#">TopCommerce - Laravel Multi Vendor ECommerce Script Laravel Multi Vendor ECommerce Script</a>
+              <span><i class="far fa-minus"></i></span>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="minicart_img">
+              <img src="images/gallery_6.jpg" alt="cart images" class="img-fluid">
+            </a>
+            <div class="minicart_text">
+              <a href="#">FindEstate - Laravel Real Estate Listing CMS With</a>
+              <span><i class="far fa-minus"></i></span>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="minicart_img">
+              <img src="images/gallery_1.jpg" alt="cart images" class="img-fluid">
+            </a>
+            <div class="minicart_text">
+              <a href="#">ProfileTop - Multi User VCard, Resume And Portfolio Builder</a>
+              <span><i class="far fa-minus"></i></span>
+            </div>
+          </li>
+        </ul>
+        <div class="wsus__mini_cart_footer">
+          <a href="#" class="cart_view">cart view</a>
+          <a href="#" class="checkout">checkout</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!--================================
+    MINI CART END
   =================================-->
 
 
@@ -72,16 +199,16 @@
     MAIN MENU START
   =================================-->
   <nav class="navbar navbar-expand-lg main_menu">
-    <div class="container">
+    <div class="container padding_sm">
       <a class="navbar-brand" href="#">
         <img src="images/logo.png" alt="WSUS" class="img-fluid w-100">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <i class="far fa-stream"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav m-auto">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
@@ -113,21 +240,25 @@
           <li class="nav-item">
             <a class="nav-link" href="#">pages <i class="fas fa-caret-down"></i></a>
             <ul class="wsus__droapdown_menu">
-              <li><a href="blog_details.html">blog details</a></li>
-              <li><a href="services_details.html">service details</a></li>
+              <li><a href="showcases.html">showcases</a></li>
               <li><a href="404.html">404 / eror</a></li>
               <li><a href="faq.html">FAQ</a></li>
               <li><a href="privacy.html">privacy & policy</a></li>
               <li><a href="terms_condition.html">terms & condition</a></li>
-              <li><a href="services_details.html">custome page</a></li>
+              <li><a href="custome page.html">custome page</a></li>
+              <li><a href="cart_view.html">cart view</a></li>
+              <li><a href="checkout.html">checkout</a></li>
+              <li><a href="forget_password.html">forget passoerd</a></li>
             </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html">contact</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link search" href="#"><i class="far fa-search"></i></a>
-          </li>
+        </ul>
+        <ul class="menu_right d-flex">
+          <li> <a class="cart_icom" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fal fa-shopping-cart"></i><span>03</span></a></li>
+          <li> <a class="search" href="#"><i class="far fa-search"></i></a></li>
+          <li><a class="login" href="login.html">login</a></li>
         </ul>
       </div>
     </div>
@@ -146,7 +277,7 @@
         <div class="row wsus__banner_content banner_slider">
           <div class="col-12">
             <div class="row justify-content-between">
-              <div class="col-xl-6">
+              <div class="col-xl-6 col-lg-6">
                 <div class="wsus__slider_text">
                   <h1><span>digital marketing</span> services</h1>
                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto illum assumenda omnis magnam magni
@@ -156,7 +287,7 @@
                   <a href="#" class="common_btn">read more <i class="fas fa-book-reader"></i></a>
                 </div>
               </div>
-              <div class="col-xl-5">
+              <div class="col-xl-5 col-lg-6">
                 <div class="wsus__banner_img">
                   <img src="images/banner_icon_1.png" alt="vactor" class="img-fluid w-100">
                 </div>
@@ -165,7 +296,7 @@
           </div>
           <div class="col-12">
             <div class="row justify-content-between">
-              <div class="col-xl-6">
+              <div class="col-xl-6 col-lg-6">
                 <div class="wsus__slider_text">
                   <h1><span>Search Engine</span> Optimization</h1>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ad cum nulla perferendis eius
@@ -174,7 +305,7 @@
                   <a href="#" class="common_btn">read more <i class="fas fa-book-reader"></i></a>
                 </div>
               </div>
-              <div class="col-xl-5">
+              <div class="col-xl-5 col-lg-6">
                 <div class="wsus__banner_img">
                   <img src="images/banner_icon_2.png" alt="vactor" class="img-fluid w-100">
                 </div>
@@ -183,7 +314,7 @@
           </div>
           <div class="col-12">
             <div class="row justify-content-between">
-              <div class="col-xl-6">
+              <div class="col-xl-6 col-lg-6">
                 <div class="wsus__slider_text">
                   <h1><span>UI / UX design</span> services</h1>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ad cum nulla perferendis eius
@@ -192,7 +323,7 @@
                   <a href="#" class="common_btn">read more <i class="fas fa-book-reader"></i></a>
                 </div>
               </div>
-              <div class="col-xl-5">
+              <div class="col-xl-5 col-lg-6">
                 <div class="wsus__banner_img">
                   <img src="images/banner_icon_3.png" alt="vactor" class="img-fluid w-100">
                 </div>
@@ -201,7 +332,7 @@
           </div>
           <div class="col-12">
             <div class="row justify-content-between">
-              <div class="col-xl-6">
+              <div class="col-xl-6 col-lg-6">
                 <div class="wsus__slider_text">
                   <h1><span>web design</span> services</h1>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ad cum nulla perferendis eius
@@ -210,7 +341,7 @@
                   <a href="#" class="common_btn">read more <i class="fas fa-book-reader"></i></a>
                 </div>
               </div>
-              <div class="col-xl-5">
+              <div class="col-xl-5 col-lg-6">
                 <div class="wsus__banner_img">
                   <img src="images/banner_icon_4.png" alt="vactor" class="img-fluid w-100">
                 </div>
@@ -219,7 +350,7 @@
           </div>
           <div class="col-12">
             <div class="row justify-content-between">
-              <div class="col-xl-6">
+              <div class="col-xl-6 col-lg-6">
                 <div class="wsus__slider_text">
                   <h1><span>web development</span> services</h1>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ad cum nulla perferendis eius
@@ -228,7 +359,7 @@
                   <a href="#" class="common_btn">read more <i class="fas fa-book-reader"></i></a>
                 </div>
               </div>
-              <div class="col-xl-5">
+              <div class="col-xl-5 col-lg-6">
                 <div class="wsus__banner_img">
                   <img src="images/banner_icon_5.png" alt="vactor" class="img-fluid w-100">
                 </div>
@@ -247,7 +378,7 @@
   <!--================================
     SPECIAL FEATURE START
   =================================-->
-  <section class="wsus__special_feature pt_90 xs_pt_65 pb_100  xs_pb_75">
+  <section class="wsus__special_feature pt_90 xs_pt_70 pb_100  xs_pb_75">
     <div class="container">
       <div class="row">
         <div class="col-xl-6 m-auto text-center">
@@ -257,56 +388,56 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-xl-3">
+        <div class="col-xl-3 col-sm-6 col-lg-4 col-lg-3">
           <div class="wsus__feature_single">
             <span class="features_icon"><i class="far fa-dollar-sign"></i></span>
             <h4>savings scheme</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex in eveniet nesciunt nam.</p>
           </div>
         </div>
-        <div class="col-xl-3">
+        <div class="col-xl-3 col-sm-6 col-lg-4 col-lg-3">
           <div class="wsus__feature_single">
             <span class="features_icon blue"><i class="fas fa-chart-bar"></i></span>
             <h4>business analysis</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex in eveniet nesciunt nam.</p>
           </div>
         </div>
-        <div class="col-xl-3">
+        <div class="col-xl-3 col-sm-6 col-lg-4 col-lg-3">
           <div class="wsus__feature_single">
             <span class="features_icon orange"><i class="fas fa-ball-pile"></i></span>
             <h4>growth level analysis</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex in eveniet nesciunt nam.</p>
           </div>
         </div>
-        <div class="col-xl-3">
+        <div class="col-xl-3 col-sm-6 col-lg-4 col-lg-3">
           <div class="wsus__feature_single">
             <span class="features_icon green"><i class="fas fa-chart-pie-alt"></i></span>
             <h4>taxation plans</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex in eveniet nesciunt nam.</p>
           </div>
         </div>
-        <div class="col-xl-3">
+        <div class="col-xl-3 col-sm-6 col-lg-4 col-lg-3">
           <div class="wsus__feature_single">
             <span class="features_icon purple"><i class="fas fa-file-chart-pie"></i></span>
             <h4>sales reports</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex in eveniet nesciunt nam.</p>
           </div>
         </div>
-        <div class="col-xl-3">
+        <div class="col-xl-3 col-sm-6 col-lg-4 col-lg-3">
           <div class="wsus__feature_single">
             <span class="features_icon green"><i class="far fa-phone-laptop"></i></span>
             <h4>technologies</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex in eveniet nesciunt nam.</p>
           </div>
         </div>
-        <div class="col-xl-3">
+        <div class="col-xl-3 col-sm-6 col-lg-4 col-lg-3">
           <div class="wsus__feature_single">
             <span class="features_icon blue"><i class="fas fa-hands-helping"></i></span>
             <h4>client support</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex in eveniet nesciunt nam.</p>
           </div>
         </div>
-        <div class="col-xl-3">
+        <div class="col-xl-3 col-sm-6 col-lg-4 col-lg-3">
           <div class="wsus__feature_single">
             <span class="features_icon orange"><i class="fab fa-artstation"></i></span>
             <h4>savings scheme</h4>
@@ -322,9 +453,9 @@
 
 
   <!--================================
-      COUNTER START
+    COUNTER START
   =================================-->
-  <section class="wsus__counter pt_90 xs_pt_65">
+  <section class="wsus__counter pt_90 xs_pt_70">
     <div class="container">
       <div class="row">
         <div class="col-xl-6 m-auto text-center">
@@ -334,28 +465,28 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-xl-3">
+        <div class="col-xl-3 col-sm-6 col-lg-3">
           <div class="wsus__single_counter">
             <i class="fas fa-hands-helping"></i>
             <h3 class="counter">1920</h3>
             <h6>happy clients</h6>
           </div>
         </div>
-        <div class="col-xl-3">
+        <div class="col-xl-3 col-sm-6 col-lg-3">
           <div class="wsus__single_counter">
             <i class="fas fa-star"></i>
             <h3 class="counter">120</h3>
             <h6>total review</h6>
           </div>
         </div>
-        <div class="col-xl-3">
+        <div class="col-xl-3 col-sm-6 col-lg-3">
           <div class="wsus__single_counter">
             <i class="far fa-file-code"></i>
             <h3 class="counter">124</h3>
             <h6>project done</h6>
           </div>
         </div>
-        <div class="col-xl-3">
+        <div class="col-xl-3 col-sm-6 col-lg-3">
           <div class="wsus__single_counter">
             <i class="fas fa-coffee"></i>
             <h3 class="counter">65</h3>
@@ -366,14 +497,14 @@
     </div>
   </section>
   <!--================================
-      COUNTER END
+    COUNTER END
   =================================-->
 
 
   <!--================================
     PORTFOLIO START
   =================================-->
-  <section class="wsus__portfolio mt_100 xs_mt_75 pt_90 xs_pt_65 pb_100 xs_pb_75">
+  <section class="wsus__portfolio mt_100 xs_mt_75 pt_90 xs_pt_70 pb_100 xs_pb_75">
     <div class="container">
       <div class="row">
         <div class="col-xl-6 m-auto text-center">
@@ -388,14 +519,14 @@
             <button class="active" data-filter="*">all</button>
             <button data-filter=".ui">UI/UX</button>
             <button data-filter=".design">web design</button>
-            <button data-filter=".dev">web development</button>
+            <button data-filter=".dev">development</button>
             <button data-filter=".mobile">mobile apps</button>
             <button data-filter=".seo">SEO</button>
           </div>
         </div>
       </div>
       <div class="row grid">
-        <div class="col-xl-4 design seo">
+        <div class="col-xl-4 col-md-6 design seo">
           <div class="wsus__single_projects">
             <img src="images/post7.jpg" alt="project" class="img-fluid w-100">
             <div class="wsus__portfolio_link">
@@ -404,46 +535,46 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-4 ui mobile dev">
+        <div class="col-xl-4 col-md-6 ui mobile dev">
           <div class="wsus__single_projects">
             <img src="images/post2.jpg" alt="project" class="img-fluid w-100">
-              <div class="wsus__portfolio_link">
+            <div class="wsus__portfolio_link">
               <h4>project name</h4>
               <a href="#"><i class="far fa-link"></i></a>
             </div>
           </div>
         </div>
-        <div class="col-xl-4 design mobile">
+        <div class="col-xl-4 col-md-6 design mobile">
           <div class="wsus__single_projects">
             <img src="images/post3.jpg" alt="project" class="img-fluid w-100">
-              <div class="wsus__portfolio_link">
+            <div class="wsus__portfolio_link">
               <h4>project name</h4>
               <a href="#"><i class="far fa-link"></i></a>
             </div>
           </div>
         </div>
-        <div class="col-xl-4 ui mobile dev">
+        <div class="col-xl-4 col-md-6 ui mobile dev">
           <div class="wsus__single_projects">
             <img src="images/post1.jpg" alt="project" class="img-fluid w-100">
-                <div class="wsus__portfolio_link">
+            <div class="wsus__portfolio_link">
               <h4>project name</h4>
               <a href="#"><i class="far fa-link"></i></a>
             </div>
           </div>
         </div>
-        <div class="col-xl-4 ui dev seo">
+        <div class="col-xl-4 col-md-6 ui dev seo">
           <div class="wsus__single_projects">
             <img src="images/post4.jpg" alt="project" class="img-fluid w-100">
-              <div class="wsus__portfolio_link">
+            <div class="wsus__portfolio_link">
               <h4>project name</h4>
               <a href="#"><i class="far fa-link"></i></a>
             </div>
           </div>
         </div>
-        <div class="col-xl-4 design seo">
+        <div class="col-xl-4 col-md-6 design seo">
           <div class="wsus__single_projects">
             <img src="images/post6.jpg" alt="project" class="img-fluid w-100">
-              <div class="wsus__portfolio_link">
+            <div class="wsus__portfolio_link">
               <h4>project name</h4>
               <a href="#"><i class="far fa-link"></i></a>
             </div>
@@ -451,13 +582,12 @@
         </div>
         <div class="col-12 mt_25 text-center">
           <a href="#" class="common_btn">see more <i class="fas fa-eye"></i></a>
-                      <div class="wsus__portfolio_link">
-              <h4>project name</h4>
-              <a href="#"><i class="far fa-link"></i></a>
-            </div>
+          <div class="wsus__portfolio_link">
+            <h4>project name</h4>
+            <a href="#"><i class="far fa-link"></i></a>
+          </div>
         </div>
       </div>
-
     </div>
   </section>
   <!--================================
@@ -468,7 +598,7 @@
   <!--================================
     DISCOVER START
   =================================-->
-  <section class="wsus__discover mt_90 xs_mt_65 mb_100 xs_mb_75">
+  <section class="wsus__discover mt_90 xs_mt_70 mb_100 xs_mb_75">
     <div class="container">
       <div class="row">
         <div class="col-xl-6 m-auto text-center">
@@ -478,15 +608,15 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-xl-4">
+        <div class="col-xl-4 col-lg-4">
           <div class="wsus__discover_img">
             <img src="images/disciver_shape.png" alt="discover" class="img-fluid w-100 d_shape">
             <img src="images/discover_bg.jpg" alt="discover" class="img-fluid w-100 img-thumbnail main_img">
           </div>
         </div>
-        <div class="col-xl-8">
+        <div class="col-xl-8 col-lg-8">
           <div class="row">
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-sm-6 col-lg-4">
               <div class="wsus__discover_single">
                 <span><i class="fal fa-user-cog"></i></span>
                 <h3>skills</h3>
@@ -494,7 +624,7 @@
                   veniam dolorem quas voluptatibus suscipit porro nemo.</p>
               </div>
             </div>
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-sm-6 col-lg-4">
               <div class="wsus__discover_single">
                 <span><i class="far fa-tasks"></i></span>
                 <h3>scale</h3>
@@ -502,7 +632,7 @@
                   veniam dolorem quas voluptatibus suscipit porro nemo.</p>
               </div>
             </div>
-            <div class="col-xl-4">
+            <div class="col-xl-4 col-sm-6 col-lg-4">
               <div class="wsus__discover_single">
                 <span><i class="fas fa-hand-holding-usd"></i></span>
                 <h3>saving</h3>
@@ -527,53 +657,53 @@
   <!--================================
     OUR PROCESS START
   =================================-->
-  <section class="wsus__our_process pt_90 xs_pt_65 pb_100 xs_pb_75">
+  <section class="wsus__our_process pt_90 xs_pt_70 pb_100 xs_pb_75">
     <div class="container">
       <div class="row">
         <div class="col-xl-6 m-auto text-center">
-          <div class="wsus__heading_area mb_115 xs_mb_90">
+          <div class="wsus__heading_area mb_115 xs_mb_20">
             <h2>our process</h2>
           </div>
         </div>
       </div>
       <div class="row justify-content-center">
-        <div class="col-xl-3">
+        <div class="col-xl-3 col-sm-6 col-md-4 col-lg-3">
           <div class="wsus__process_text" style="background: url(images/red_shape.png);">
             <h4>discovery</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Doloremque.</p>
           </div>
         </div>
-        <div class="col-xl-3">
+        <div class="col-xl-3 col-sm-6 col-md-4 col-lg-3">
           <div class="wsus__process_text" style="background: url(images/blue_shape.png);">
             <h4>plan</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque possimus cum.</p>
           </div>
         </div>
-        <div class="col-xl-3">
+        <div class="col-xl-3 col-sm-6 col-md-4 col-lg-3">
           <div class="wsus__process_text" style="background: url(images/orange_shape.png);">
             <h4>execute</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque possimus cum.</p>
           </div>
         </div>
-        <div class="col-xl-3">
+        <div class="col-xl-3 col-sm-6 col-md-4 col-lg-3">
           <div class="wsus__process_text" style="background: url(images/red_shape.png);">
             <h4>discovery</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit possimus cum.</p>
           </div>
         </div>
-        <div class="col-xl-3">
+        <div class="col-xl-3 col-sm-6 col-md-4 col-lg-3">
           <div class="wsus__process_text" style="background: url(images/blue_shape.png);">
             <h4>plan</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Doloremque.</p>
           </div>
         </div>
-        <div class="col-xl-3">
+        <div class="col-xl-3 col-sm-6 col-md-4 col-lg-3">
           <div class="wsus__process_text" style="background: url(images/orange_shape.png);">
             <h4>execute</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque possimus cum.</p>
           </div>
         </div>
-        <div class="col-xl-3">
+        <div class="col-xl-3 col-sm-6 col-md-4 col-lg-3">
           <div class="wsus__process_text" style="background: url(images/red_shape.png);">
             <h4>deliver</h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Doloremque.</p>
@@ -590,7 +720,7 @@
   <!--================================
     OUR SERVICES START
   =================================-->
-  <section class="wsus__services mt_90 xs_mt_65">
+  <section class="wsus__services mt_90 xs_mt_70">
     <div class="container">
       <div class="row">
         <div class="col-xl-6 m-auto text-center">
@@ -599,11 +729,11 @@
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-xl-6">
+      <div class="row justify-content-md-center">
+        <div class="col-xl-6 col-md-10 col-lg-6">
           <div class="wsus__services_single">
             <div class="wsus__services_text">
-              <h3>web design</h3>
+              <a href="services_details.html">web design</a>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repellendus id voluptatem facilis unde
                 nobis ipsum repudiandae voluptatibus sit dolorum molestiae.</p>
             </div>
@@ -612,22 +742,22 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-6">
+        <div class="col-xl-6 col-md-10 col-lg-6">
           <div class="wsus__services_single wsus__services_single_2">
             <div class="wsus__services_icon navy">
               <i class="far fa-palette"></i>
             </div>
             <div class="wsus__services_text navy">
-              <h3>ui/ux design</h3>
+              <a href="services_details.html">ui/ux design</a>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repellendus id voluptatem facilis unde
                 nobis ipsum repudiandae voluptatibus sit.</p>
             </div>
           </div>
         </div>
-        <div class="col-xl-6">
+        <div class="col-xl-6 col-md-10 col-lg-6">
           <div class="wsus__services_single">
             <div class="wsus__services_text navy">
-              <h3>web development</h3>
+              <a href="services_details.html">web development</a>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repellendus id voluptatem facilis unde
                 nobis ipsum repudiandae voluptatibus sit dolorum molestiae.</p>
             </div>
@@ -636,22 +766,22 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-6">
+        <div class="col-xl-6 col-md-10 col-lg-6">
           <div class="wsus__services_single wsus__services_single_2">
             <div class="wsus__services_icon">
               <i class="fas fa-paint-brush"></i>
             </div>
             <div class="wsus__services_text">
-              <h3>graphic design</h3>
+              <a href="services_details.html">graphic design</a>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repellendus id voluptatem facilis unde
                 nobis ipsum repudiandae voluptatibus sit dolorum molestiae.</p>
             </div>
           </div>
         </div>
-        <div class="col-xl-6">
+        <div class="col-xl-6 col-md-10 col-lg-6">
           <div class="wsus__services_single">
             <div class="wsus__services_text">
-              <h3>mobile apps</h3>
+              <a href="services_details.html">mobile apps</a>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repellendus id voluptatem facilis unde
                 nobis ipsum repudiandae voluptatibus sit.</p>
             </div>
@@ -660,22 +790,22 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-6">
+        <div class="col-xl-6 col-md-10 col-lg-6">
           <div class="wsus__services_single wsus__services_single_2">
             <div class="wsus__services_icon navy">
               <i class="far fa-file-search"></i>
             </div>
             <div class="wsus__services_text navy">
-              <h3>seo marketing</h3>
+              <a href="services_details.html">seo marketing</a>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repellendus id voluptatem facilis unde
                 nobis ipsum repudiandae voluptatibus sit.</p>
             </div>
           </div>
         </div>
-        <div class="col-xl-6">
+        <div class="col-xl-6 col-md-10 col-lg-6">
           <div class="wsus__services_single">
             <div class="wsus__services_text navy">
-              <h3>video editing</h3>
+              <a href="services_details.html">video editing</a>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repellendus id voluptatem facilis unde
                 nobis ipsum repudiandae voluptatibus sit dolorum molestiae.</p>
             </div>
@@ -684,13 +814,13 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-6">
+        <div class="col-xl-6 col-md-10 col-lg-6">
           <div class="wsus__services_single wsus__services_single_2">
             <div class="wsus__services_icon">
               <i class="fas fa-megaphone"></i>
             </div>
             <div class="wsus__services_text">
-              <h3>digital marketing</h3>
+              <a href="services_details.html">digital marketing</a>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repellendus id voluptatem facilis unde
                 nobis ipsum repudiandae voluptatibus sit dolorum molestiae.</p>
             </div>
@@ -707,7 +837,7 @@
   <!--================================
     BLOGS  START
   =================================-->
-  <section class="wsus__blogs mt_100 xs_mt_75 pt_90 xs_pt_65 pb_100 xs_pb_75">
+  <section class="wsus__blogs mt_100 xs_mt_70 pt_90 xs_pt_70 pb_100 xs_pb_75">
     <div class="container">
       <div class="row">
         <div class="col-xl-6 m-auto text-center">
@@ -717,7 +847,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-xl-4">
+        <div class="col-xl-4 col-md-6">
           <div class="wsus__single_blog">
             <div class="wsus__blog_img">
               <img src="images/blog_1.jpg" alt="blog items" class="img-fluid w-100">
@@ -742,7 +872,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xl-4">
+        <div class="col-xl-4 col-md-6">
           <div class="wsus__single_blog">
             <div class="wsus__blog_img">
               <img src="images/blog_2.jpg" alt="blog items" class="img-fluid w-100">
@@ -761,13 +891,14 @@
                   <span>rumi rahman</span>
                 </div>
               </div>
-              <a href="blog_details.html" class="blog_title">How We Imitate and Enhance Your Tech Recruiting Process.</a>
+              <a href="blog_details.html" class="blog_title">How We Imitate and Enhance Your Tech Recruiting
+                Process.</a>
               <p>Lorem ipsum dolor sit amet, porro discere ex sea. Ius at mazim soluta scripta, cum ne quot aeque nobis,
               </p>
             </div>
           </div>
         </div>
-        <div class="col-xl-4">
+        <div class="col-xl-4 col-md-6">
           <div class="wsus__single_blog">
             <div class="wsus__blog_img">
               <img src="images/blog_3.jpg" alt="blog items" class="img-fluid w-100">
@@ -806,7 +937,7 @@
   <!--================================
     TESTIMONIAL  START
   =================================-->
-  <section class="wsus__testimonial mt_90 xs_mt_65 mb_145 xs_mb_120">
+  <section class="wsus__testimonial mt_90 xs_mt_70 mb_145 xs_mb_120">
     <div class="container">
       <div class="row">
         <div class="col-xl-6 m-auto text-center">
@@ -899,13 +1030,13 @@
   <!--================================ 
     FOOTER START
   =================================-->
-  <footer class="wsus__footer pt_95 xs_pt_70">
+  <footer class="wsus__footer pt_95 xs_pt_65">
     <div class="container">
       <div class="row justify-content-between">
         <div class="col-xl-4 col-sm-8 col-md-7 col-lg-4">
           <div class="wsus__footer_content">
             <a href="#" class="footer_logo">WebSolutionUS Inc</a>
-            <p class="footer_text"><i class="far fa-headset"></i> 24/7 support: <a
+            <p class="footer_text"><i class="far fa-headset"></i> 24/7 support : <a
                 href="callto:09658741524565">09658741524565</a></p>
             <p class="address"><i class="fal fa-location-circle"></i> San Francisco City Hall, San Francisco, CA</p>
             <a class="call_mail" href="callto:01705092045"><i class="fal fa-phone-alt"></i> +8801587268542</a>
@@ -939,7 +1070,7 @@
         </div>
         <div class="col-xl-3 col-sm-7 col-md-7 col-lg-3 order-lg-4">
           <div class="wsus__footer_content">
-            <h4>Help Link</h4>
+            <h4>social Link</h4>
             <ul class="footer_icon d-flex flex-wrap">
               <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
               <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
@@ -947,16 +1078,34 @@
               <li><a class="behance" href="#"><i class="fab fa-behance"></i></a></li>
               <li><a class="google" href="#"><i class="fab fa-google-plus-g"></i></a></li>
             </ul>
-            <h4 class="mt_30 mb-3">subscribe</h4>
+            <!-- <h4 class="mt_30 mb-3">subscribe</h4>
             <form>
               <input type="text" placeholder="Subscribe">
               <button type="submit"><i class="fal fa-angle-right"></i></button>
+            </form> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container sebscribe">
+      <div class="wsus__footer_subscribe">
+        <div class="row">
+          <div class="col-xl-5 col-lg-5">
+            <h2>subscribe our news letter</h2>
+          </div>
+          <div class="col-xl-7 col-lg-7">
+            <form>
+              <input type="text" placeholder="Email">
+              <button type="submit">subscribe</button>
             </form>
           </div>
         </div>
       </div>
     </div>
-    <div class="wsus__copyright mt_100 xs_mt_5">
+
+    <div class="wsus__copyright mt_100 xs_mt_70 pt_100">
       <div class="ontainer">
         <div class="row">
           <div class="col-12 text-center">
@@ -1000,6 +1149,12 @@
   <script src="js/isotope.pkgd.min.js"></script>
   <!--sticky sidebar js-->
   <script src="js/sticky_sidebar.js"></script>
+  <!--select2 js-->
+  <script src="js/select2.min.js"></script>
+  <!--simply Countdown js-->
+  <script src="js/simplyCountdown.js"></script>
+  <!--venobox js-->
+  <script src="js/venobox.min.js"></script>
 
   <!--main/custom js-->
   <script src="js/main.js"></script>

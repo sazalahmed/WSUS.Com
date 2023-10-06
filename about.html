@@ -12,12 +12,67 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/spacing.css">
   <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/venobox.min.css">
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
+
+  <!--================================
+    POPUP TOP START
+  =================================-->
+  <section class="wsus__popup_top">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-lg-3">
+          <div class="wsus__popup_counter">
+            <div class="simply-countdown simply-countdown-one"></div>
+          </div>
+        </div>
+        <div class="col-xl-9 col-lg-9">
+          <div class="wsus__popup_top_text">
+            <h4>special offer</h4>
+            <p>up to <span>40%</span> on any membership purchase</p>
+            <a href="#">grab the deal</a>
+            <span class="delete"><i class="far fa-times"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--================================
+    POPUP TOP END
+  =================================-->
+
+
+  <!--==========================
+    POPUP SUBSCRIBE START
+  ===========================-->
+  <!-- <section class="wsus__popup_subscribe">
+    <div class="popup_subscribe_center" style="background: url(images/popup_bg.jpg);">
+      <div class="popup_subscribe_text">
+        <img src="images/logo.png" alt="logo" class="img-fluid">
+        <h5>be the first to know</h5>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum unde quis hic quaerat labore adipisci itaque.</p>
+        <form>
+          <input class="news_input" type="email" placeholder="Email">
+          <button type="submit">go</button>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Don't show this popup again
+            </label>
+          </div>
+        </form>
+        <span class="subscribe_close"><i class="far fa-times"></i></span>
+    </div>
+  </section> -->
+  <!--==========================
+    POPUP SUBSCRIBE END
+  ===========================-->
 
 
   <!--================================
@@ -26,7 +81,7 @@
   <section class="wsus__topbar">
     <div class="container">
       <div class="row">
-        <div class="col-xl-6">
+        <div class="col-12 col-md-6 col-xl-6">
           <ul class="wsus__topbar_icon d-flex flex-wrap">
             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
@@ -34,7 +89,7 @@
             <li><a href="#"><i class="fab fa-youtube"></i></a></li>
           </ul>
         </div>
-        <div class="col-xl-6">
+        <div class="col-12 col-md-6 col-xl-6">
           <ul class="wsus__topbar_action d-flex flex-wrap justify-content-end">
             <li><a href="callto:+96587455888774"><i class="fal fa-phone-alt"></i> +96587455888774</a></li>
             <li><a href="mailto:example@gmail.com"><i class="fas fa-envelope"></i> example@gmail.com</a></li>
@@ -72,21 +127,21 @@
     MAIN MENU START
   =================================-->
   <nav class="navbar navbar-expand-lg main_menu">
-    <div class="container">
+    <div class="container padding_sm">
       <a class="navbar-brand" href="#">
         <img src="images/logo.png" alt="WSUS" class="img-fluid w-100">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <i class="far fa-stream"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav m-auto">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="about.html">About</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="services.html">services <i class="fas fa-caret-down"></i></a>
@@ -113,21 +168,22 @@
           <li class="nav-item">
             <a class="nav-link" href="#">pages <i class="fas fa-caret-down"></i></a>
             <ul class="wsus__droapdown_menu">
-              <li><a href="blog_details.html">blog details</a></li>
-              <li><a href="services_details.html">service details</a></li>
+              <li><a href="showcases.html">showcases</a></li>
               <li><a href="404.html">404 / eror</a></li>
               <li><a href="faq.html">FAQ</a></li>
               <li><a href="privacy.html">privacy & policy</a></li>
               <li><a href="terms_condition.html">terms & condition</a></li>
-              <li><a href="services_details.html">custome page</a></li>
+              <li><a href="custome page.html">custome page</a></li>
             </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html">contact</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link search" href="#"><i class="far fa-search"></i></a>
-          </li>
+        </ul>
+
+        <ul class="menu_right d-flex">
+          <li> <a class="search" href="#"><i class="far fa-search"></i></a></li>
+          <li><a class="login" href="login.html">login</a></li>
         </ul>
       </div>
     </div>
@@ -135,6 +191,7 @@
   <!--================================
     MAIN MENU END
   =================================-->
+
 
 
   <!--================================
@@ -146,7 +203,7 @@
         <div class="row">
           <div class="col-12">
             <div class="wsus__breadcrumb_content">
-              <h2>about us</h2>
+              <h1>about us</h1>
               <ul class="d-flex flex-wrap align-iten-center">
                 <li><a href="#">home</a></li>
                 <li><a href="#">about us</a></li>
@@ -166,17 +223,17 @@
      ABOUT START
   =================================-->
   <section class="wsus__about">
-    <div class="wsus__about_top pt_100 xs_pt_75 pb_100 xs_pb_75">
+    <div class="wsus__about_top pt_95 xs_pt_70 pb_100 xs_pb_75">
       <div class="container">
         <div class="row justify-content-around">
-          <div class="col-xl-5">
+          <div class="col-xl-5 col-md-7 col-lg-6 ">
             <div class="wsus__about_top_text">
               <h5>creative agency</h5>
               <h2>we're a ferfect fit creative agency</h2>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit explicabo, ad tempora possimus cumque perferendis blanditiis doloremque accusamus, iste expedita libero aliquid incidunt sapiente ratione omnis. Veniam esse necessitatibus itaque.</p>
             </div>
           </div>
-          <div class="col-xl-5">
+          <div class="col-xl-6 col-md-5 col-lg-5">
             <div class="wsus__about_top_img">
               <img src="images/banner_icon_3.png" alt="wsus agency" class="img-fluid w-100">
             </div>
@@ -187,7 +244,7 @@
     <div class="wsus__creative_services pt_75 xs_pt_50 pb_100 xs_pb_75">
       <div class="container">
         <div class="row">
-          <div class="col-xl-3">
+          <div class="col-xl-3 col-sm-6 col-lg-4">
             <div class="row">
               <div class="col-12">
                 <div class="wsus__feature_single">
@@ -205,7 +262,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3">
+          <div class="col-xl-3 col-sm-6 col-lg-4">
             <div class="row">
               <div class="col-12 mt_150">
                 <div class="wsus__feature_single">
@@ -216,7 +273,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-6">
+          <div class="col-xl-6 col-lg-4">
             <div class="wsus__we_expert">
               <h5>we're offering </h5>
               <h2>creative services with creative team & digital business</h2>
@@ -236,7 +293,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-xl-3">
+          <div class="col-xl-3 col-md-6 col-lg-4">
             <div class="wsus__single_team">
               <div class="wsus__single_team_img">
                 <img src="images/agent_4.jpg" alt="team images" class="imf-fluid w-100">
@@ -253,7 +310,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3">
+          <div class="col-xl-3 col-md-6 col-lg-4">
             <div class="wsus__single_team">
               <div class="wsus__single_team_img">
                 <img src="images/agent_1.jpg" alt="team images" class="imf-fluid w-100">
@@ -270,7 +327,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3">
+          <div class="col-xl-3 col-md-6 col-lg-4">
             <div class="wsus__single_team">
               <div class="wsus__single_team_img">
                 <img src="images/agent_2.jpg" alt="team images" class="imf-fluid w-100">
@@ -287,7 +344,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3">
+          <div class="col-xl-3 col-md-6 col-lg-4">
             <div class="wsus__single_team">
               <div class="wsus__single_team_img">
                 <img src="images/agent_3.jpg" alt="team images" class="imf-fluid w-100">
@@ -317,28 +374,28 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-xl-3">
+          <div class="col-xl-3 col-sm-6 col-lg-3">
             <div class="wsus__single_counter">
               <i class="fas fa-hands-helping"></i>
               <h3 class="counter">1920</h3>
               <h6>happy clients</h6>
             </div>
           </div>
-          <div class="col-xl-3">
+          <div class="col-xl-3 col-sm-6 col-lg-3">
             <div class="wsus__single_counter">
               <i class="fas fa-star"></i>
               <h3 class="counter">120</h3>
               <h6>total review</h6>
             </div>
           </div>
-          <div class="col-xl-3">
+          <div class="col-xl-3 col-sm-6 col-lg-3">
             <div class="wsus__single_counter">
               <i class="far fa-file-code"></i>
               <h3 class="counter">124</h3>
               <h6>project done</h6>
             </div>
           </div>
-          <div class="col-xl-3">
+          <div class="col-xl-3 col-sm-6 col-lg-3">
             <div class="wsus__single_counter">
               <i class="fas fa-coffee"></i>
               <h3 class="counter">65</h3>
@@ -526,24 +583,30 @@
 
 
 
-  <!--jquery library js-->
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <!--bootstrap js-->
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <!--font-awesome js-->
-  <script src="js/Font-Awesome.js"></script>
-  <!--slick slider js-->
-  <script src="js/slick.min.js"></script>
-  <!--counter js-->
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.countup.min.js"></script>
-  <!--isotop js-->
-  <script src="js/isotope.pkgd.min.js"></script>
-  <!--sticky sidebar js-->
-  <script src="js/sticky_sidebar.js"></script>
+ <!--jquery library js-->
+ <script src="js/jquery-3.6.0.min.js"></script>
+ <!--bootstrap js-->
+ <script src="js/bootstrap.bundle.min.js"></script>
+ <!--font-awesome js-->
+ <script src="js/Font-Awesome.js"></script>
+ <!--slick slider js-->
+ <script src="js/slick.min.js"></script>
+ <!--counter js-->
+ <script src="js/jquery.waypoints.min.js"></script>
+ <script src="js/jquery.countup.min.js"></script>
+ <!--isotop js-->
+ <script src="js/isotope.pkgd.min.js"></script>
+ <!--sticky sidebar js-->
+ <script src="js/sticky_sidebar.js"></script>
+ <!--select2 js-->
+ <script src="js/select2.min.js"></script>
+ <!--simply Countdown js-->
+ <script src="js/simplyCountdown.js"></script>
+ <!--venobox js-->
+ <script src="js/venobox.min.js"></script>
 
-  <!--main/custom js-->
-  <script src="js/main.js"></script>
+ <!--main/custom js-->
+ <script src="js/main.js"></script>
 
 </body>
 

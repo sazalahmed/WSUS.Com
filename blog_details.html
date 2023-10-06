@@ -12,12 +12,67 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/spacing.css">
   <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/venobox.min.css">
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
+
+  <!--================================
+    POPUP TOP START
+  =================================-->
+  <section class="wsus__popup_top">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-lg-3">
+          <div class="wsus__popup_counter">
+            <div class="simply-countdown simply-countdown-one"></div>
+          </div>
+        </div>
+        <div class="col-xl-9 col-lg-9">
+          <div class="wsus__popup_top_text">
+            <h4>special offer</h4>
+            <p>up to <span>40%</span> on any membership purchase</p>
+            <a href="#">grab the deal</a>
+            <span class="delete"><i class="far fa-times"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--================================
+    POPUP TOP END
+  =================================-->
+
+
+  <!--==========================
+    POPUP SUBSCRIBE START
+  ===========================-->
+  <!-- <section class="wsus__popup_subscribe">
+    <div class="popup_subscribe_center" style="background: url(images/popup_bg.jpg);">
+      <div class="popup_subscribe_text">
+        <img src="images/logo.png" alt="logo" class="img-fluid">
+        <h5>be the first to know</h5>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum unde quis hic quaerat labore adipisci itaque.</p>
+        <form>
+          <input class="news_input" type="email" placeholder="Email">
+          <button type="submit">go</button>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Don't show this popup again
+            </label>
+          </div>
+        </form>
+        <span class="subscribe_close"><i class="far fa-times"></i></span>
+    </div>
+  </section> -->
+  <!--==========================
+    POPUP SUBSCRIBE END
+  ===========================-->
 
 
   <!--================================
@@ -26,7 +81,7 @@
   <section class="wsus__topbar">
     <div class="container">
       <div class="row">
-        <div class="col-xl-6">
+        <div class="col-12 col-md-6 col-xl-6">
           <ul class="wsus__topbar_icon d-flex flex-wrap">
             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
@@ -34,7 +89,7 @@
             <li><a href="#"><i class="fab fa-youtube"></i></a></li>
           </ul>
         </div>
-        <div class="col-xl-6">
+        <div class="col-12 col-md-6 col-xl-6">
           <ul class="wsus__topbar_action d-flex flex-wrap justify-content-end">
             <li><a href="callto:+96587455888774"><i class="fal fa-phone-alt"></i> +96587455888774</a></li>
             <li><a href="mailto:example@gmail.com"><i class="fas fa-envelope"></i> example@gmail.com</a></li>
@@ -72,18 +127,18 @@
     MAIN MENU START
   =================================-->
   <nav class="navbar navbar-expand-lg main_menu">
-    <div class="container">
+    <div class="container padding_sm">
       <a class="navbar-brand" href="#">
         <img src="images/logo.png" alt="WSUS" class="img-fluid w-100">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <i class="far fa-stream"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav m-auto">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html">About</a>
@@ -111,23 +166,24 @@
             <a class="nav-link" href="blog.html">blogs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">pages <i class="fas fa-caret-down"></i></a>
+            <a class="nav-link" href="#">pages <i class="fas fa-caret-down"></i></a>
             <ul class="wsus__droapdown_menu">
-              <li><a class="active" href="blog_details.html">blog details</a></li>
-              <li><a href="services_details.html">service details</a></li>
+              <li><a href="showcases.html">showcases</a></li>
               <li><a href="404.html">404 / eror</a></li>
               <li><a href="faq.html">FAQ</a></li>
               <li><a href="privacy.html">privacy & policy</a></li>
               <li><a href="terms_condition.html">terms & condition</a></li>
-              <li><a href="services_details.html">custome page</a></li>
+              <li><a href="custome page.html">custome page</a></li>
             </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html">contact</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link search" href="#"><i class="far fa-search"></i></a>
-          </li>
+        </ul>
+
+        <ul class="menu_right d-flex">
+          <li> <a class="search" href="#"><i class="far fa-search"></i></a></li>
+          <li><a class="login" href="login.html">login</a></li>
         </ul>
       </div>
     </div>
@@ -135,6 +191,7 @@
   <!--================================
     MAIN MENU END
   =================================-->
+
 
 
   <!--================================
@@ -146,7 +203,7 @@
         <div class="row">
           <div class="col-12">
             <div class="wsus__breadcrumb_content">
-              <h2>blog details</h2>
+              <h1>blog details</h1>
               <ul class="d-flex flex-wrap align-iten-center">
                 <li><a href="#">blog</a></li>
                 <li><a href="#">blog details</a></li>
@@ -163,25 +220,24 @@
 
 
   <!--================================
-    BLOGS  START
+    BLOGS DETAILS START
   =================================-->
   <section class="wsus__blog_details pt_100 xs_pt_75 mb_100 xs_mb_75">
     <div class="container">
       <div class="row">
-        <div class="col-xl-8">
+        <div class="col-xl-8 col-lg-8">
           <div class="wsus__blog_det_img">
             <img src="images/blog_details_img.jpg" alt="blog images" class="img-fluid w-100">
             <p><span>12</span> mar</p>
             <span class="blog_det_cat">development</span>
           </div>
-          <ul class="wsus__blog_det_head d-flex align-items-center">
+          <ul class="wsus__blog_det_head d-flex flex-wrap align-items-center">
             <li><i class="fas fa-user"></i> by author</li>
             <li><i class="far fa-comment-alt-dots"></i> 10 comments</li>
             <li><i class="far fa-heart"></i> 20 likes</li>
             <li><i class="fal fa-clipboard-list"></i>development</li>
           </ul>
-
-          <div class="wsus__blog_det_text">
+          <div class="wsus__blog_det_text pb_5">
             <h3>The Best Delicious Coffee Shop In Bangkok China.</h3>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora corporis magnam neque quae rerum illum consectetur blanditiis iusto reprehenderit, itaque quos eius repellendus voluptate commodi nisi atque omnis aspernatur ducimus ipsam hic beatae explicabo delectus, minus sapiente. Esse error illo, est quo quis veritatis impedit a rerum quae fuga aliquam.</p>
@@ -193,7 +249,6 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora corporis magnam neque quae rerum illum consectetur blanditiis iusto reprehenderit, itaque quos eius repellendus voluptate commodi.</p>
 
           </div>
-
           <div class="wsus__blog_share d-flex align-items-center flex-wrap">
             <span>share this blog :</span>
             <ul class="d-flex">
@@ -205,7 +260,6 @@
               <li><a href="#"><i class="fab fa-twitter"></i></a></li>
             </ul>
           </div>
-
           <div class="wsus__comment_area overflow-hidden">
             <h3>comments <span>04</span></h3>
             <div class="row">
@@ -222,6 +276,20 @@
                       <li><a href="#"><i class="far fa-thumbs-up"></i></a></li>
                       <li><a href="#"><i class="far fa-thumbs-down"></i></a></li>
                     </ul>
+                  </div>
+                  <div class="wsus__single_comment replay">
+                    <div class="wsus__comment_img">
+                      <img src="images/agent_2.jpg" alt="user" class="img-fluid">
+                    </div>
+                    <div class="wsus__comment_text">
+                      <h5>anupom debnath  <span>03 mar 2022</span></h5>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quo facilis quis exercitationem debitis possimus mollitia voluptates quam quia veniam tempora quidem labore officia iusto distinctio dolore.</p>
+                      <ul class="blog_replay d-flex">
+                        <li><a href="#"><i class="fas fa-reply"></i> replay</a></li>
+                        <li><a href="#"><i class="far fa-thumbs-up"></i></a></li>
+                        <li><a href="#"><i class="far fa-thumbs-down"></i></a></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -274,7 +342,6 @@
               </div>
             </div>
           </div>
-
           <div class="wsus__comment_post">
             <h3>leave a comment</h3>
             <form>
@@ -292,25 +359,20 @@
               </div>
             </form>
           </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          <div class="wsus__shop_det_footer_btn">
+            <ul>
+              <li class="align-items-start left_btn_iten">
+                <a class="common_btn2" href="#"><span><i class="fas fa-chevron-left"></i></span> previus</a>
+                <a class="next_title" href="#">How to Prepare New Developers for Success.</a>
+              </li>
+              <li class="align-items-end">
+                <a class="common_btn2" href="#">next <span><i class="fas fa-chevron-right"></i></span></a>
+                  <a class="next_title" href="#">Admios Recruitment and Screening Process.</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="col-xl-4">
+        <div class="col-xl-4 col-lg-4">
           <div class="wsus__blog_sidebar" id="sticky_sidebar">
             <div class="row">
               <div class="col-xl-12">
@@ -323,7 +385,7 @@
                 </div>
               </div>
               <div class="col-xl-12">
-                <div class="wsus__blog_category pb-0">
+                <div class="wsus__blog_category pb_5">
                   <h3>categories</h3>
                   <ul>
                     <li><a href="#">web design <span>04</span></a></li>
@@ -384,19 +446,6 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xl-12">
-                <div class="wsus__blog_tag pb_10">
-                  <h3>popular tags</h3>
-                  <ul class="d-flex flex-wrap">
-                    <li><a href="#">web design</a></li>
-                    <li><a href="#">graphic</a></li>
-                    <li><a href="#">UI/UX</a></li>
-                    <li><a href="#">SEO</a></li>
-                    <li><a href="#">development</a></li>
-                    <li><a href="#">mobile apps</a></li>
-                  </ul>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -404,7 +453,7 @@
     </div>
   </section>
   <!--================================
-    BLOGS  END
+    BLOGS DETAILS END
   =================================-->
 
 
@@ -497,24 +546,30 @@
 
 
 
-  <!--jquery library js-->
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <!--bootstrap js-->
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <!--font-awesome js-->
-  <script src="js/Font-Awesome.js"></script>
-  <!--slick slider js-->
-  <script src="js/slick.min.js"></script>
-  <!--counter js-->
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.countup.min.js"></script>
-  <!--isotop js-->
-  <script src="js/isotope.pkgd.min.js"></script>
-  <!--sticky sidebar js-->
-  <script src="js/sticky_sidebar.js"></script>
+ <!--jquery library js-->
+ <script src="js/jquery-3.6.0.min.js"></script>
+ <!--bootstrap js-->
+ <script src="js/bootstrap.bundle.min.js"></script>
+ <!--font-awesome js-->
+ <script src="js/Font-Awesome.js"></script>
+ <!--slick slider js-->
+ <script src="js/slick.min.js"></script>
+ <!--counter js-->
+ <script src="js/jquery.waypoints.min.js"></script>
+ <script src="js/jquery.countup.min.js"></script>
+ <!--isotop js-->
+ <script src="js/isotope.pkgd.min.js"></script>
+ <!--sticky sidebar js-->
+ <script src="js/sticky_sidebar.js"></script>
+ <!--select2 js-->
+ <script src="js/select2.min.js"></script>
+ <!--simply Countdown js-->
+ <script src="js/simplyCountdown.js"></script>
+ <!--venobox js-->
+ <script src="js/venobox.min.js"></script>
 
-  <!--main/custom js-->
-  <script src="js/main.js"></script>
+ <!--main/custom js-->
+ <script src="js/main.js"></script>
 
 </body>
 

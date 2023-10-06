@@ -17,13 +17,38 @@ $(function () {
         });
     }
     
+
+    //*=======POPUP TOP COUNTDOWN====== 
+    var d = new Date(),
+        countUpDate = new Date();
+    d.setDate(d.getDate() + 365);
+
+    // default example
+    simplyCountdown('.simply-countdown-one', {
+        year: d.getFullYear(),
+        month: d.getMonth() + 1,
+        day: d.getDate(),
+        enableUtc: true
+    });
+
+
+    //*==========POPUP TOP CLOSE==========  
+    $('.delete').on('click', function(){
+        $('.wsus__popup_top').addClass('.hide_popup');
+    });
     
+
+    //===========POPUP SUBSCRIBE===========    
+    $(".subscribe_close").on("click", function(){
+        $(".wsus__popup_subscribe").fadeOut();
+    });
     
+
     //*=======BANNER SLIDER====== 
     $('.banner_slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 4000,
         dots: true,
         arrows: false,
@@ -41,10 +66,8 @@ $(function () {
     });
 
 
-
     //*==========COUNTER==========  
     $('.counter').countUp();
-
 
 
     //*==========ISOTOPE============== 
@@ -71,7 +94,7 @@ $(function () {
     $('.testi_slider').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 4000,
         dots: true,
         arrows: false,
@@ -126,9 +149,14 @@ $(function () {
 
 
 
+    // =========venobox.js===========
+    $('.venobox').venobox(); 
+    
 
-
-
+    //=======SELECT2====== 
+    $(document).ready(function() {
+        $('.select_2').select2();
+    });
 
 
 
